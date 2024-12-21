@@ -1,23 +1,61 @@
+/* Define the custom font */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+         url('fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+         url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('fonts/Lora-Regular.woff2') format('woff2'),
+         url('fonts/Lora-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+	padding: 0;
+}
+p {
+    font-family: 'Lora', serif;
+    margin: 0;
+	padding: 0;
+}
 :root {
     --primary: #2f7b57;
     --secondary: #eef2f1;
     --white: #fff;
     --black: #000;
-}
-*{
-	margin: 0;
-	padding: 0;
-}
-p,h1,h2,h3,h4,h5,h6{
-	margin: 0;
-	padding: 0;
-}
+} 
+
+
 
 .top-bar {
     background-color: var(--primary);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: var(--white);
+    padding: 7px 0;
 }
 .top-bar .container{
     background-color: var(--primary);
@@ -26,13 +64,45 @@ p,h1,h2,h3,h4,h5,h6{
 }
 .top-bar .container .top-info{
 	display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.top-icon{
-	font-size: 14px;
-	font-weight: 600;
+.top-icon .i{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.top-icon p{
+	font-size: 16px;
+	font-weight: 400;
+    
+}
+.top-icon:nth-child(2){
+    padding-left: 15px;
 }
 .top-social a{
 	text-decoration: none;
 	color: inherit;
+    margin: 0;
+    padding: 0 10px;
+}
+.top-social a .i{
 	font-size: 18px;
+    margin: 0;
+}
+.language-drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.language-drop img{
+    height: 12px;
+    width: 22px;
+    margin-right: 6px;
+}
+.language-drop p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.language-drop p .i{
+    font-size: 10px;
 }
