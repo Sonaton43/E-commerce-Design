@@ -93,10 +93,22 @@ p {
 .top-social a:hover{
     color: rgba(201, 201, 201, 0.5);
 }
+
+.top-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-buttons div:nth-child(1){
+    padding-right: 15px;
+}
+
+
 .language-drop{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .language-drop img{
     height: 12px;
@@ -109,22 +121,41 @@ p {
 }
 .language-drop p .i{
     font-size: 10px;
+    padding-left: 7px;
 }
-
-.top-buttons{
+.language-menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: fit-content;
+    background-color: var(--white);
+    color: var(--black);
+}
+.language-menu .menu-ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.language-menu .menu-ul a{
+    padding: 5px 12px;
+}
+.language-menu .menu-ul a:hover{
+    background-color: rgba(0, 0, 0, 0.01);
 }
 .profile-drop{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.profile-drop .i{
-    font-size: 16px;
-}
 .profile-drop p{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
+}
+.profile-drop p .i{
+    font-size: 10px;
+    padding-left: 7px;
+}
+.profile-drop .i-profile{
+    font-size: 23px;
+    padding-right: 5px;
 }
