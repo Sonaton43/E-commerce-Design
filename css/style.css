@@ -1,0 +1,38 @@
+:root {
+    --primary: #2f7b57;
+    --secondary: #eef2f1;
+    --white: #fff;
+    --black: #000;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+
+.top-bar {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+.top-bar .container{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+}
+.top-bar .container .top-info{
+	display: flex;
+}
+.top-icon{
+	font-size: 14px;
+	font-weight: 600;
+}
+.top-social a{
+	text-decoration: none;
+	color: inherit;
+	font-size: 18px;
+}
