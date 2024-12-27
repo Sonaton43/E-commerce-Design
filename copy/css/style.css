@@ -5691,6 +5691,10 @@ h6.post-title {
 
 /*LAYOUT -> HEADER STYLE*/
 /*Header default*/
+.header-area{
+    margin: auto;
+    width: 90%;
+}
 .header-top-ptb-1 {
   padding: 7px 0;
   border-bottom: 1px solid #ececec;
@@ -10205,7 +10209,7 @@ footer .hotline img {
 }
 @media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1610px;
+    max-width: 90%;
   }
   .col-lg-1-5 {
     width: 20%;
