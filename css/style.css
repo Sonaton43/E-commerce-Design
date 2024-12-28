@@ -569,6 +569,20 @@ a:hover{
 }
 /*small-details*/
 .small-details{
-    
+    padding: 10px 20px;
+}
+.small-details .detals-container{
+    border: 1px solid var(--primary-light);
+    border-radius: 5px;
+    padding: 10px;
+}
+.small-details .detals-container>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.small-details .detals-container>ul>li{
+    font-size: 17px;
+    padding: 4px 5px;
 }
 /*Tab & Mobile Nav End*/
