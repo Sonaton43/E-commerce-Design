@@ -149,5 +149,42 @@ a{
         display: none;
     }
 }
-
 /*Topbar Style End*/
+/*Logo & Search Start*/
+.logoitems{
+    color: var(--light-black);
+    border-bottom: 1px solid #e9e9e9;
+    padding: 10px 0;
+}
+.logoitems .custom-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoitems .custom-container .logoandSearch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*logoandSearch*/
+.logoandSearch .logo{
+    height: 50px;
+    width: 50px;
+}
+.logoandSearch .logo img{
+    height: 100%;
+    width: 100%;
+}
+.logoandSearch .search{
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid var(--primary);
+}
+.logoandSearch .search input{
+    background: transparent;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+}
+/*Logo & Search End*/
