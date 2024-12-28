@@ -161,6 +161,7 @@ a:hover{
     color: var(--light-black);
     border-bottom: 1px solid #e9e9e9;
     padding: 15px 0;
+    background: var(--white);
 }
 .logoitems .custom-container{
     display: flex;
@@ -290,5 +291,40 @@ a:hover{
 /*Profile Dropdown*/
 .profile-dropdown{
     position: relative;
+}
+.profile-dropdown-menu{
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 0;
+    position: absolute;
+    width: 150px;
+    top: 35px;
+    right: 0;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    background: var(--white);
+    z-index: 999;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out;
+}
+.profile-dropdown-menu.show{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+.profile-dropdown-menu>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.profile-dropdown-menu>ul>li{
+    transition: 0.4s ease-in-out;
+    padding: 7px 25px;
+}
+.profile-dropdown-menu>ul>li>a>.i{
+    margin-right: 10px;
+}
+.profile-dropdown-menu>ul>li:hover a{
+    color: var(--primary);
 }
 /*Logo & Search End*/
