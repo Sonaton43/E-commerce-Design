@@ -328,9 +328,31 @@ a:hover{
 .profile-dropdown-menu>ul>li:hover a{
     color: var(--primary);
 }
+/*menu-bar*/
+.menu-bar{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.menu-bar .i{
+    font-size: 25px;
+}
 @media (max-width: 1100px){
     .items-icon>ul>li>a>p{
         display: none;
+    }
+}
+@media (max-width: 992px){
+    .search{
+        display: none;
+    }
+    .items-icon{
+        display: none;
+    }
+    .menu-bar{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.3s ease-in-out;
     }
 }
 /*Logo & Search End*/
@@ -414,6 +436,11 @@ a:hover{
 @keyframes animatedText{
     to{
         background-position: 100%;
+    }
+}
+@media(max-width: 992px){
+    .nav_bar{
+        display: none;
     }
 }
 /*Navbar Start End*/
