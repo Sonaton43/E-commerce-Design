@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Top Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .top-bar .left,
+        .top-bar .center,
+        .top-bar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar .left a,
+        .top-bar .right a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .top-bar .center {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .top-bar .right {
+            position: relative;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown select {
+            border: none;
+            background: transparent;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .dropdown .dropdown-icon {
+            margin-left: 5px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .responsive .top-bar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .responsive .top-bar .left,
+        .responsive .top-bar .right {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .top-bar .left a,
+            .top-bar .right a {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="left">
+            <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="#"><i class="fas fa-user-circle"></i> My Account</a>
+        </div>
+        <div class="center">
+            <i class="fas fa-gem"></i> Trendy 25 silver jewelry, save up 35% off today
+        </div>
+        <div class="right">
+            <a href="tel:+1800900"><i class="fas fa-phone-alt"></i> +1800 900</a>
+            <div class="dropdown">
+                <form>
+                    <select id="language-select" onchange="updateLanguage()">
+                        <option value="English" selected>English</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                    </select>
+                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateLanguage() {
+            const selectedLanguage = document.getElementById('language-select').value;
+            alert(`Language selected: ${selectedLanguage}`);
+        }
+    </script>
+</body>
+</html>
