@@ -353,5 +353,11 @@ a:hover{
     margin-left: 5px;
 }
 /*navbar_items*/
-
+.navbar_items>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
 /*Navbar Start End*/
