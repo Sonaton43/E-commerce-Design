@@ -85,13 +85,46 @@
             <div class="custom-container">
                 <div class="logoandSearch">
                     <div class="logo">
-                        <img src="image/logo.jpg" alt="">
+                        <img src="image/JagoUma.png" alt="">
                     </div>
                     <div class="search">
-                        <input type="text" name="search" id="search">
+                        <form action="" class="d-flex">
+                            <input type="text" name="search" id="search" placeholder="Searh your items...">
+                            <button class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
                 <div class="items-icon">
+                    <ul>
+                        <li>
+                            <a href="shop-compare.html">
+                                <img src="image/icon/icon-heart.svg" alt=""> Wish List
+                                <span><div><p>3</p></div></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="shop-compare.html">
+                                <img src="image/icon/icon-cart.svg" alt=""> Cart
+                                <span><div><p>5</p></div></span>
+                            </a>
+                        </li>
+                        <li><a href="#" class="login">Login</a></li>
+                        <li><a href="#" class="sign_up">Sign up</a></li>
+                        <li class="profile-dropdown" onclick="oneclickDropdown('dropdown3')">
+                            <a href="#">
+                                <img src="image/icon/icon-user.svg" alt="">Admin
+                            </a>
+                            <div class="profile-dropdown-menu">
+                                <ul>
+                                    <li>My Profile</li>
+                                    <li>Setting</li>
+                                    <li>Sign out</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
