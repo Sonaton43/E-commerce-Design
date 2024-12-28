@@ -268,25 +268,26 @@ a:hover{
     color: var(--white);
     border-radius: 3px;
     padding: 4px 10px;
-    border: 1px solid var(--primary);
     transition: 0.4s ease-in-out;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
 .login:hover{
+    color: var(--white);
+    background-color: #04bd66;
     
 }
 .sign_up{
-    /* border: 1px solid var(--primary); */
     padding: 4px 10px;
     border-radius: 3px;
     background: #ffc107;
+    color: var(--white);
     transition: 0.4s ease-in-out;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
-/* .sign_up:hover{
-    background: var(--primary);
+.sign_up:hover{
     color: var(--white);
-} */
+    background: #e4ab00;
+}
 /*Profile Dropdown*/
 .profile-dropdown{
     position: relative;
@@ -395,7 +396,7 @@ a:hover{
 }
 .navbar_items>ul>li>a{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .navbar_items > ul > li > a .i {
     animation: fireAnimation 2s infinite alternate;
@@ -413,6 +414,9 @@ a:hover{
         color: #ff6600;
         transform: scale(1);
     }
+}
+.navbar_items > ul > li > a .i2{
+    font-size: 12px;
 }
 .navbar_items>ul>li:hover,.navbar_items>ul>li.active{
     /* background: var(--primary); */
