@@ -420,6 +420,7 @@ a:hover{
 }
 .navbar_items > ul > li > a .i2.show{
     transform: rotate(180deg);
+    color: var(--primary);
 }
 .navbar_items>ul>li:hover,.navbar_items>ul>li.active{
     /* background: var(--primary); */
@@ -439,7 +440,7 @@ a:hover{
     background: var(--white);
     border: 1px solid var(--secondary);
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 15px 20px;
     min-width: 180px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.09);
     z-index: 9999;
