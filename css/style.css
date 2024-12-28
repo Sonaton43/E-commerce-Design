@@ -361,15 +361,34 @@ a:hover{
     padding: 0;
 }
 .navbar_items>ul>li{
-    padding: 5px 15px;
+    padding: 3px 12px;
+    margin: 0 2px;
     transition: 0.4s ease-in-out;
 }
 .navbar_items>ul>li>a{
     font-size: 18px;
     font-weight: 600;
 }
-.navbar_items>ul>li:hover{
-    background: var(--primary);
-    color: var(--white);
+.navbar_items > ul > li > a .i {
+    animation: fireAnimation 2s infinite alternate;
+}
+@keyframes fireAnimation {
+    0% {
+        color: #e09202;
+        transform: scale(1);
+    }
+    50% {
+        color: red;
+        transform: scale(1.1);
+    }
+    100% {
+        color: #ff6600;
+        transform: scale(1);
+    }
+}
+.navbar_items>ul>li:hover,.navbar_items>ul>li.active{
+    /* background: var(--primary); */
+    color: var(--primary);
+    border-radius: 5px;
 }
 /*Navbar Start End*/
