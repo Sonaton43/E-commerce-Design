@@ -25,7 +25,7 @@ a:hover{
     color: inherit;
 }
 :root {
-    --primary: #2f7b57;
+    --primary: #0d9455;
     --primary-light: #509b789a;
     --secondary: #eef2f1;
     --white: #fff;
@@ -150,7 +150,7 @@ a:hover{
     transition: 0.4s ease-in-out;
     color: var(--black);
 }
-@media(max-width: 878px){
+@media(max-width: 992px){
     .top-bar{
         display: none;
     }
@@ -334,6 +334,7 @@ a:hover{
     border-bottom: 1px solid #e9e9e9;
     padding: 10px 0;
     background: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 .nav_bar .custom-container{
     display: flex;
@@ -390,5 +391,23 @@ a:hover{
     /* background: var(--primary); */
     color: var(--primary);
     border-radius: 5px;
+}
+/*time-cheers*/
+.time-cheers p{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: -1px;
+    padding: 0;
+    background-image: linear-gradient(to right,#00f260,#f29D00,#0575E7, #64f38c);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    background-position: -100%;
+    animation: animatedText 5s infinite alternate-reverse;
+}
+@keyframes animatedText{
+    to{
+        background-position: 100%;
+    }
 }
 /*Navbar Start End*/
