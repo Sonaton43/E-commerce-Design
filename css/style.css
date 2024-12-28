@@ -328,3 +328,28 @@ a:hover{
     color: var(--primary);
 }
 /*Logo & Search End*/
+/*Navbar Start Start*/
+.nav_bar{
+    color: var(--light-black);
+    border-bottom: 1px solid #e9e9e9;
+    padding: 10px 0;
+    background: var(--white);
+}
+.nav_bar .custom-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*allcategory-btn*/
+.category-btn{
+    background: var(--primary);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: var(--white);
+    width: fit-content;
+}
+.category-btn .i2{
+    font-size: 10px;
+    margin-left: 5px;
+}
+/*Navbar Start End*/
