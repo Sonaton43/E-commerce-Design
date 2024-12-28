@@ -449,6 +449,7 @@ a:hover{
     background: var(--white);
     border-right: 2px solid var(--secondary);
     width: 350px;
+    height: 100%;
     padding: 15px 0;
     position: fixed;
     top: 0;
@@ -583,6 +584,30 @@ a:hover{
 }
 .small-details .detals-container>ul>li{
     font-size: 17px;
-    padding: 4px 5px;
+    padding: 6px 7px;
+}
+.small-details .detals-container>ul>li>.i{
+    color: var(--primary);
+    margin-right: 10px;
+}
+/*small-social-links*/
+.small-social-links{
+    padding: 3px 20px;
+}
+.small-social-links h5{
+    font-size: 20px;
+    color: var(--light-black);
+}
+/*small-social-icons*/
+.small-social-icons a div{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+    position: relative;
+}
+.small-social-icons a .i{
+    position: absolute;
+
 }
 /*Tab & Mobile Nav End*/
