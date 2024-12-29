@@ -1,0 +1,37 @@
+:root {
+    --primary: #0d9455;
+    --primary-light: #509b789a;
+    --secondary: #eef2f1;
+    --white: #fff;
+    --black: #000;
+    --light-black: #7E7E7E;
+
+    --lato-font: 'Lato', sans-serif;
+} 
+footer{
+    background: var(--primary);
+}
+footer>.custom-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.footer-details{
+    max-width: 340px;
+}
+.footer-details .logo{
+    margin: 0;
+    padding: 0;
+}
+.footer-details .logo img{
+    width: 130px;
+    height: 50px;
+}
+.footer-details .logo-subtext{
+    font-family: var(--lato-font);
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white);
+}
