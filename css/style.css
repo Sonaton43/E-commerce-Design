@@ -47,6 +47,9 @@ a:hover{
     border: none;
     border-radius: 20px;
 }
+.submit-btn:hover{
+    background: #086d3e;
+}
 @media (max-width: 778px) {
     .custom-container{
         width: 95%;

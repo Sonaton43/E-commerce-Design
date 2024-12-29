@@ -251,7 +251,7 @@ main .custom-container{
     background: transparent;
     border-bottom: 1px solid var(--primary-light);
     margin: 7px 0;
-    color: var(--light-footer);
+    color: var(--light-black);
 }
 .login-form form input:focus,
 .login-form form select:focus{
@@ -266,7 +266,7 @@ main .custom-container{
 }
 .remember-forgot div span{
     font-size: 14px;
-    min-width: 110px;
+    min-width: 170px;
 }
 .remember-forgot a{
     font-size: 14px;
@@ -294,7 +294,8 @@ main .custom-container{
         width: 80%;
         padding: 40px 0;
     }
-    .login-form form input{
+    .login-form form input,
+    .login-form form select{
         width: 100%;
     }
     .remember-forgot{
