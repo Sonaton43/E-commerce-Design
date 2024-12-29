@@ -256,6 +256,7 @@ main .custom-container{
 .login-form form input:focus,
 .login-form form select:focus{
     outline: none;
+    background: none;
 }
 .remember-forgot {
     width: 90%;
