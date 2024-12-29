@@ -9,6 +9,7 @@
 
     --lato-font: 'Lato', sans-serif;
 } 
+/*--Footer Style Start--*/
 footer{
     background: var(--primary);
 }
@@ -17,9 +18,9 @@ footer>.footer-container{
     width: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 30px 0;
 }
+/*footer-details*/
 .footer-details{
     max-width: 340px;
 }
@@ -62,14 +63,69 @@ footer>.footer-container{
     color: var(--light-footer);
     margin-right: 10px;
 }
-
+/*Footer Menus*/
 footer>.footer-container ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-footer>.footer-container ul .menu-head{
+footer>.footer-container ul li{
+    padding: 3px 0;
+}
+footer>.footer-container ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    transition: .3s ease-in-out;
+    color: var(--white);
+}
+footer>.footer-container ul li a:hover{
+    color: var(--black);
+}
+footer>.footer-container ul>.menu-head{
+    padding-bottom: 15px;
+}
+footer>.footer-container ul>.menu-head a{
     font-size: 24px;
     font-weight: 500;
-    padding-bottom: 15px;
+    color: var(--white);
+}
+footer>.footer-container ul>.menu-head a:hover{
+    color: var(--white);
+}
+footer>.footer-container ul .menu-head span{
+    color: red;
+}
+footer>.footer-container .footer-icons{
+    display: flex;
+}
+/*footer-icons*/
+footer>.footer-container .footer-icons a{
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+footer>.footer-container .footer-icons a .i{
+    position: absolute;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--primary);
+    transition: 0.3s ease-in-out;
+}
+footer>.footer-container .footer-icons a:hover{
+    background-color: var(--black);
+}
+footer>.footer-container .footer-icons a:hover .i{
+    color: var(--white);
+}
+/*paymets-text*/
+.paymets-text h5{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
 }
