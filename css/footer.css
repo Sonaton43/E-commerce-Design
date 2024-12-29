@@ -243,15 +243,18 @@ main .custom-container{
     color: var(--primary);
 }
 /*login-form form*/
-.login-form form input{
+.login-form form input,
+.login-form form select{
     width: 90%;
     padding-bottom: 5px;
     border: none;
     background: transparent;
     border-bottom: 1px solid var(--primary-light);
     margin: 7px 0;
+    color: var(--light-footer);
 }
-.login-form form input:focus{
+.login-form form input:focus,
+.login-form form select:focus{
     outline: none;
 }
 .remember-forgot {
