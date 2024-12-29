@@ -201,3 +201,99 @@ footer>.footer-container .footer-icons a:hover .i{
         width: 80%;
     }
 }
+/*Login Style*/
+main .custom-container{
+    width: 90%;
+    padding: 20px 0;
+}
+.login-area{
+    margin: auto;
+    width: 80%;
+}
+.login-card{
+    background: var(--white);
+    border: 2px solid var(--secondary);
+    box-shadow: 3px 5px 5px rgba(0, 0,0, 0.09);
+    border-radius: 20px;
+}
+.login-image{
+    margin: auto;
+    padding: 40px 0;
+    width: 60%;
+}
+.login-image img{
+    width: 100%;
+}
+/*login-form*/
+.login-form h4{
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 0;
+    padding-bottom: 6px;
+}
+.login-form p{
+    font-family: var(--lato-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+    padding-bottom: 10px;
+}
+.login-form p span{
+    color: var(--primary);
+}
+/*login-form form*/
+.login-form form input{
+    width: 90%;
+    padding-bottom: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--primary-light);
+    margin: 7px 0;
+}
+.login-form form input:focus{
+    outline: none;
+}
+.remember-forgot {
+    width: 90%;
+}
+.remember-forgot div input{
+    margin-right: 10px;
+}
+.remember-forgot div span{
+    font-size: 14px;
+    min-width: 110px;
+}
+.remember-forgot a{
+    font-size: 14px;
+    color: var(--primary);
+}
+@media (max-width: 878px){
+    .login-image{
+        margin: auto;
+        padding: 20px 0;
+        width: 80%;
+    }
+}
+@media (max-width: 778px){
+    .login-area{
+        margin: auto;
+        width: 95%;
+    }
+    .login-image{
+        margin: auto;
+        padding: 40px 0;
+        width: 70%;
+    }
+    .login-form{
+        margin: auto;
+        width: 80%;
+        padding: 40px 0;
+    }
+    .login-form form input{
+        width: 100%;
+    }
+    .remember-forgot{
+        width: 100%;
+    }
+}

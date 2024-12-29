@@ -38,6 +38,15 @@ a:hover{
     margin: auto !important;
     width: 90% !important;
 }
+.submit-btn{
+    background: var(--primary);
+    color: var(--white);
+    font-size: 16px;
+    padding: 4px 20px;
+    margin: 0;
+    border: none;
+    border-radius: 20px;
+}
 @media (max-width: 778px) {
     .custom-container{
         width: 95%;
