@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jago Uma Phone Verification</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/logRegFor.css">
+    <style>
+        *{
+            margin: auto;
+            padding: auto;
+        }
+        body{
+            background: #02020288;
+        }
+        .login-card{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            transform: translate(-50%,-50%);
+        }
+        .login-image{
+            margin: auto;
+            padding: 40px 0;
+            width: 80%;
+        }
+        @media (min-width: 1201px){
+            .login-card-main{
+                min-height: 70vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .login-form-main{
+                min-height: 70vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 1200px){
+            .login-card-main{
+                min-height: 50vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .login-form-main{
+                min-height: 50vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 992px){
+            .login-card-main{
+                min-height: 45vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .login-form-main{
+                min-height: 45vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 768px){
+            .login-card{
+                width: 75%;
+            }
+            .login-card-main{
+                min-height: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .login-form-main{
+                min-height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 550px){
+            .login-card{
+                width: 90%;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="custom-container">
+        <div class="login-area">
+            <div class="row d-flex">
+                <div class="col-12 login-card bg-white">
+                    <div class="row ">
+                        <div class="col-md-6 d-none d-sm-block d-flex align-items-center login-card-main">
+                            <div class="login-image ">
+                                <img src="image/Authentication.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 login-form-main">
+                            <div class="login-form" >
+                                <h4>Phone Verification</h4>
+                                <p>You did not receive the code? <a href="login.html"><span> Resend</span></a></p>
+                                <form action="#">
+                                    <input type="number" class="w-100" name="phone" placeholder="Enter Verification Code**">
+                                    <button class="submit-btn mt-3" type="submit">Verify</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
