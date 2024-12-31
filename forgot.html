@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Jago Uma - Forgot Password</title>
+    
+        <!-- Meta Description -->
+        <meta name="description" content="Jago Uma offers high-quality [product/service] to help [audience] achieve [goal].">
+    
+        <!-- Meta Keywords (Optional) -->
+        <meta name="keywords" content="Jago Uma, Online Shoping, [another keyword], [related topic]">
+    
+        <!-- Canonical Link -->
+        <link rel="canonical" href="https://www.yourdomain.com/">
+    
+        <!-- Open Graph Tags for Social Media -->
+        <meta property="og:title" content="Jago Uma - Your Service/Content">
+        <meta property="og:description" content="Jago Uma provides high-quality [your services/products].">
+        <meta property="og:image" content="URL_to_image.jpg">
+        <meta property="og:url" content="https://www.yourdomain.com">
+    
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Jago Uma - Your Service/Content">
+        <meta name="twitter:description" content="Jago Uma offers [product/service].">
+        <meta name="twitter:image" content="URL_to_image.jpg">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Font-Awesome css -->
+        <link rel="stylesheet" href="css/all.min.css">
+        
+        <!-- My CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/logRegFor.css">
+        
+        <!-- Structured Data (JSON-LD) -->
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Service",
+            "name": "Jago Uma",
+            "description": "Description of the service",
+            "url": "https://www.yourdomain.com"
+        }
+        </script>
+    </head> 
+<body>    
+	<!--Navigation Start-->
+        <!--Top Bar Start-->
+        <div class="top-bar">
+            <div class="custom-container">
+                <div class="top-menus">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li>|</li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="top-headline">
+                    <p>Trendy 25silver jewelry, save up 35% off today</p>
+                </div>
+                <div class="top-end">
+                    <ul>
+                        <li>help line: <span> 019XX-XXXXXX</span></li>
+                        <li class="language-dropdown" onclick="oneclickDropdown('dropdown1','dropdown2')" id="dropdown2">
+                            English<i class="fa-solid fa-chevron-down i"></i>
+                            <div class="language-dropdown-menu" id="dropdown1">
+                                <ul>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Bangla</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Top Bar End-->
+        <!--Logo & Search Start-->
+        <div class="logoitems">
+            <div class="custom-container">
+                <div class="logoandSearch">
+                    <div class="logo">
+                        <a href="index.html"><img src="image/JagoUma.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <form action="" class="d-flex">
+                            <input type="text" name="search" id="search" placeholder="Searh your items...">
+                            <button class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="items-icon">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="image/icon/icon-heart.svg" alt=""> <p>Wish List</p>
+                                <span><div><p>3</p></div></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="image/icon/icon-cart.svg" alt=""> <p>Cart</p>
+                                <span><div><p>5</p></div></span>
+                            </a>
+                        </li>
+                        <li><a href="login.html" class="login">Login</a></li>
+                        <li><a href="#" class="sign_up">Sign up</a></li>
+                        <!-- <li class="profile-dropdown" onclick="oneclickDropdown('dropdown3')">
+                            <a href="#">
+                                <img src="image/icon/icon-user.svg" alt="">Admin
+                            </a>
+                            <div class="profile-dropdown-menu" id="dropdown3">
+                                <ul>
+                                    <li><a href="#"><i class="fa-regular fa-user i"></i> My Profile</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-sliders i"></i> Setting</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket i"></i> Sign out</a></li>
+                                </ul>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="menu-bar">
+                    <i class="fa-solid fa-bars i" onclick="oneclickDropdown('dropdown4')"></i>
+                </div>
+            </div>
+        </div>
+        <!--Logo & Search End-->
+        <!--Navbar Start-->
+        <div class="nav_bar">
+            <div class="custom-container">
+                <div class="allcategory-btn">
+                    <div class="category-btn"><i class="fa-solid fa-layer-group"></i> All Category <i class="fa-solid fa-chevron-down i2"></i></div>
+                </div>
+                <div class="navbar_items">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-fire-flame-curved i"></i> Deals</a></li>
+                        <li class="navbar_items-dropdown" onclick="oneclickDropdown('navbar_items3','navbar_items4')">
+                            <a href="#">Women <i class="fa-solid fa-chevron-down i2" id="navbar_items4"></i></a>
+                            <div class="navbar_items-dropdown-menu" id="navbar_items3">
+                                <ul>
+                                    <li><a href="#">New-Arrivals</a></li>
+                                    <li><a href="#">Saree</a></li>
+                                    <li><a href="#">Shalwar Kameez</a></li>
+                                    <li><a href="#">Kurta</a></li>
+                                    <li><a href="#">Shawls</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar_items-dropdown" onclick="oneclickDropdown('navbar_items1','navbar_items2')">
+                            <a href="#">Men <i class="fa-solid fa-chevron-down i2" id="navbar_items2"></i></a>
+                            <div class="navbar_items-dropdown-menu" id="navbar_items1">
+                                <ul>
+                                    <li><a href="#">New-Arrivals</a></li>
+                                    <li><a href="#">Shirt</a></li>
+                                    <li><a href="#">T-shirt</a></li>
+                                    <li><a href="#">Pant</a></li>
+                                    <li><a href="#">Jacket</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar_items-dropdown" onclick="oneclickDropdown('navbar_items5','navbar_items6')">
+                            <a href="#">Kids <i class="fa-solid fa-chevron-down i2" id="navbar_items6"></i></a>
+                            <div class="navbar_items-dropdown-menu" id="navbar_items5">
+                                <ul>
+                                    <li><a href="#">New-Arrivals</a></li>
+                                    <li><a href="#">Shirt</a></li>
+                                    <li><a href="#">Kurta</a></li>
+                                    <li><a href="#">Shawls</a></li>
+                                    <li><a href="#">Shalwar Kameez</a></li>
+                                    <li><a href="#">T-shirt</a></li>
+                                    <li><a href="#">Pant</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar_items-dropdown" onclick="oneclickDropdown('navbar_items9','navbar_items10')">
+                            <a href="#">Wedding <i class="fa-solid fa-chevron-down i2" id="navbar_items10"></i></a>
+                            <div class="navbar_items-dropdown-menu" id="navbar_items9">
+                                <ul>
+                                    <li><a href="#">Lehenga</a></li>
+                                    <li><a href="#">Sherwani </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar_items-dropdown" onclick="oneclickDropdown('navbar_items7','navbar_items8')">
+                            <a href="#">Winter <i class="fa-solid fa-chevron-down i2" id="navbar_items8"></i></a>
+                            <div class="navbar_items-dropdown-menu" id="navbar_items7">
+                                <ul>
+                                    <li><a href="#">Jacket</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Shawls</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="time-cheers">
+                    <p>Good Morning</p>
+                </div>
+            </div>
+        </div>
+        <!--Navbar End-->
+        <!--Tab & Mobile Navigation Start-->
+        <div class="small-screen-nav" id="dropdown4">
+            <div class="small-header">
+                <div class="small-container">
+                    <div class="logo">
+                        <img src="image/JagoUma.png" alt="">
+                    </div>
+                    <div class="cross">
+                        <i class="fa-solid fa-xmark i" onclick="oneclickDropdown('dropdown4')"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="small-search-bar">
+                <form action="#">
+                    <input type="text" name="search" placeholder="search your items..">
+                    <button class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="samll-menus">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Hot Deals</a></li>
+                    <li class="small-dropdown" onclick="oneclickDropdown('dropdown5','dropdown6')">
+                        <a href="#">Women<i class="fa-solid fa-chevron-down i" id="dropdown6"></i></a>
+                        <div class="small-dropdown-menu" id="dropdown5">
+                            <ul>
+                                <li><a href="#">New-Arrivals</a></li>
+                                <li><a href="#">Saree</a></li>
+                                <li><a href="#">Shalwar Kameez</a></li>
+                                <li><a href="#">Kurta</a></li>
+                                <li><a href="#">Shawls</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="small-dropdown" onclick="oneclickDropdown('dropdown7','dropdown8')">
+                        <a href="#">Men<i class="fa-solid fa-chevron-down i" id="dropdown8"></i></a>
+                        <div class="small-dropdown-menu" id="dropdown7">
+                            <ul>
+                                <li><a href="#">New-Arrivals</a></li>
+                                <li><a href="#">Shirt</a></li>
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Pant</a></li>
+                                <li><a href="#">Jacket</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="small-dropdown" onclick="oneclickDropdown('dropdown9','dropdown10')">
+                        <a href="#">Kids<i class="fa-solid fa-chevron-down i" id="dropdown10"></i></a>
+                        <div class="small-dropdown-menu" id="dropdown9">
+                            <ul>
+                                <li><a href="#">New-Arrivals</a></li>
+                                <li><a href="#">Shirt</a></li>
+                                <li><a href="#">Kurta</a></li>
+                                <li><a href="#">Shawls</a></li>
+                                <li><a href="#">Shalwar Kameez</a></li>
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Pant</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="small-dropdown" onclick="oneclickDropdown('dropdown13','dropdown14')">
+                        <a href="#">Wedding<i class="fa-solid fa-chevron-down i" id="dropdown14"></i></a>
+                        <div class="small-dropdown-menu" id="dropdown13">
+                            <ul>
+                                <li><a href="#">Lehenga</a></li>
+                                <li><a href="#">Sherwani</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="small-dropdown" onclick="oneclickDropdown('dropdown11','dropdown12')">
+                        <a href="#">Winter<i class="fa-solid fa-chevron-down i" id="dropdown12"></i></a>
+                        <div class="small-dropdown-menu" id="dropdown11">
+                            <ul>
+                                <li><a href="#">Jacket</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">Shawls</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="small-details">
+                <div class="detals-container">
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot i"></i> 04/344 Kallyanpur, Dhaka.</li>
+                        <li><i class="fa-solid fa-user i"></i> <a href="#" class="login">Login</a><span class="mx-1"> </span><a href="#" class="sign_up">Sign up</a></li>
+                        <li><i class="fa-solid fa-headphones i"></i> 019XX-XXXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-social-links">
+                <h5>Follow Us</h5>
+                <div class="small-social-icons">
+                    <a href="#"><div><i class="fa-brands fa-facebook-f i"></i></div></a>
+                    <a href="#"><div><i class="fa-brands fa-instagram i"></i></div></a>
+                    <a href="#"><div><i class="fa-brands fa-youtube i"></i></div></a>
+                </div>
+            </div>
+            <div class="small-copyright">
+                <p>Copyright 2024 <i class="fa-regular fa-copyright"></i> Jagi Uma. Design by <a href="https://sonaton43.github.io/resume/">Sonaton Kundu</a></p>
+            </div>
+        </div>
+        <!--Tab & Mobile Navigation End-->
+    <!--Navigation End-->
+
+    <!--Main conent Start-->
+    <main>
+        <div class="custom-container">
+            <div class="login-area">
+                <div class="row justify-content-center my-3 my-md-5">
+                    <div class="col-xl-12 login-card">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="login-image">
+                                    <img src="image/Login.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                                <div class="login-form py-md-4">
+                                    <h4>Forgot Password</h4>
+                                    <p>Please enter your email address.</p>
+                                    <form action="#">
+                                        <input type="email" name="email" placeholder="Email*">
+                                        <div class="d-flex justify-content-between remember-forgot mt-1">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <input type="checkbox" name="checkbox"> 
+                                                <span>I agree to terms & Policy.</span>
+                                            </div>
+                                            <!-- <a href="#">Forgot password?</a> -->
+                                        </div>
+                                        <button class="submit-btn mt-3" type="submit">Login</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Main conent End-->
+
+    <!--Footer Start-->
+    <footer class="px-3 ps-sm-0">
+        <div class="footer-container">
+            <div class="footer1">
+                <div class="footer-details">
+                    <div class="logo">
+                        <img src="image/JagoUmaFooter.png" alt="">
+                        <p class="logo-subtext">Go enjoy your shopping. Go enjoy your shopping</p>
+                        <h5 class="hotline"><i class="fa-solid fa-headset i"></i> 099 98787 347</h5>
+                        <p><i class="fa-solid fa-envelope i"></i> jagouma@gmail.com</p>
+                        <p><i class="fa-solid fa-location-dot i"></i> Tropicana Tower,  12d, (Lift 12) 45 Topkhana Road, Dhaka.</p>
+                    </div>
+                </div>
+                <div class="allpages">
+                    <ul>
+                        <li class="menu-head"><a href="#"><span>Jago</span> Uma</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privecy Polices</a></li>
+                        <li><a href="#">FAQS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="topcategorys">
+                    <ul>
+                        <li class="menu-head"><a href="#"><span>Top</span> Categorys</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Wedding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-socials">
+                    <ul>
+                        <li class="menu-head"><a href="#"><span>Follow</span> us</a></li>
+                        <li class="footer-icons">
+                            <a href="#"><div><i class="fa-brands fa-facebook-f i"></i></div></a>
+                            <a href="#"><div><i class="fa-brands fa-instagram i"></i></div></a>
+                            <a href="#"><div><i class="fa-brands fa-youtube i"></i></div></a>
+                        </li>
+                        <li class="paymets-text">
+                            <h5>Pay with:</h5>
+                            <div class="payments-methods">
+                                <img src="image/surecash.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-last">
+            <p><i class="fa-regular fa-copyright"></i> 2024 Jago Uma - All Right Reserved. Design by <a href="https://sonaton43.github.io/resume/"><span class="text-black">Sonaton Kundu</span></a></p>
+        </div>
+    </footer>
+    <!--Footer End-->
+    
+
+    <!--Font-Awsome js-->
+    <script src="js/all.min.js"></script>
+    <!--Java Scripts-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function oneclickDropdown(...dropdownIds) {
+            dropdownIds.forEach(function(dropdownId) {
+                var dropdown = document.getElementById(dropdownId);
+                dropdown.classList.toggle('show');
+            });
+        }
+    </script>
+</body>
+</html>
